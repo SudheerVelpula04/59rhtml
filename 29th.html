@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <!--
+         simple english lang
+         attribute="values"
+         forms
+         inline-block level ele
+
+        textarea-
+        select-options
+
+     -->
+
+        <form action="./submit.html"  enctype="text/plain" autocomplete="off">
+                <fieldset>
+                    <legend>Application</legend>
+                     <label for="firstname">Name:</label>
+            <input type="text" name="firstname" id="firstname" required autofocus>
+            <br>
+            <label for="lastname">Father's Name:</label>
+            <input type="text" name="lastname" id="lastname">
+            <br>
+            <label for="number">Number:</label>
+            <input type="tel" name="number" id="number" autofocus>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <br>
+            <input type="date">
+            <br>
+            <label for="">gender:<sup style="color: red;">*</sup></label>
+            <input type="radio" name="gender" id="male" value="Male" >
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="Female" >
+            <label for="female">Female:</label>
+            <br>
+            <label for="aadhar">Aadhar:</label>
+            <input type="text" name="aadhar" id="aadhar" maxlength="12" minlength="12" required value="098765432112" disabled>
+
+            <br>
+                <input type="file">
+            <br>
+                </fieldset>
+
+            <input type="submit">
+        </form>
+</body>
+</html>
