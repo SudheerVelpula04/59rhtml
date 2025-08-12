@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!--
+        pattern
+        -------
+        . - any one char 
+        * - zero are more pre
+        + - one are more pre
+        ^ -start of string
+        $ -end of string
+        []-[abc]-a|b|c
+        [^]-not inside
+        {n}-fixed length
+        {n,}-start length
+        {n,m}-n-start length,m-end-length
+        -   to [a-z],[A-Z],[0-9]
+        [0-9]-\d-[\d]
+        \D-
+        \s
+        \S
+        \w-a-zA-Z
+        \W
+
+        mobile number
+        -------------
+        \+91[6-9][\d]{9}
+
+        pin-code-validation
+        ------------------- 
+        500072
+        ------
+        5[\d]{5}
+        [5][\d]{5}
+        
+        panCard validation
+        ------------------
+        10
+        [A-Z]{5}[0-9]{4}[A-Z]
+
+        ex:aA12345.username
+        start any one a-z
+                      A-Z
+                      [0-9]
+
+
+        email validation
+        ----------------
+        abc@gmail.com
+        abc.abc@gmail.com
+        abc123@gmail.com
+        abc_abc@gmail.com
+
+        ="[a-z.\d_]+@gmail\.com"
+
+
+        ()-group
+        |-or 
+        abc@outlook.com
+        abc@outlook.in,.edu,.org,.gov,.co,
+        abc@yahoo.com
+        abc@yahoo.in
+
+        "[a-z.\d_]+@(gmail|yahoo|outlook)\.(com|in|co|gov|org|edu)"
+
+        .com,in.gov,.gmail@username
+        \.(com|in|co|gov|org|edu)\.gmail@[a-z]+
+
+
+        password validation
+        -------------------
+        uppercase-1 or n...
+        lowercase-1 or n...
+        spacial-1 or n..
+        \W-~!@#$%^&*(_-+)]{}\|,<.>
+        (?=.*[a-z])(?=.*[A-Z])(?.*[!@#$%]).{8,16}
+
+    (?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%])(?=.*[0-9]).{8,16}
+
+
+        
+
+        favicon
+            trivani
+            sandeep
+        semantic and non-semantic
+            tejaswi
+            harsitha
+            prakash
+        entities
+            ashvini
+            sairam
+        meta tags
+            prasad
+            lakshmi durga
+            ganga mani
+        picture
+            sai satvika
+            madavika
+
+
+
+        () group
+        \
+
+     -->
+
+     <form action="submit.html">
+        <!-- <input type="text" pattern="[a-z.\d_]+@(gmail|yahoo|outlook)\.(com|in|co|gov|org|edu)"> -->
+
+        <input type="text" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%])(?=.*[0-9]).{8,16}">
+     </form>
+
+
+</body>
+</html>
